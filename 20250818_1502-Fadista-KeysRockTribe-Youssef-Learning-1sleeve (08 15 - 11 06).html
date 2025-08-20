@@ -1,0 +1,781 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2f3336">
+    <meta name="msapplication-TileColor" content="#2f3336">
+    <meta name="theme-color" content="#2f3336">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+      Notice the use of public in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+<div class="css-49rpsf"><div class="css-1xj5gmv"><div class="css-14973vb"><div class="css-1d1fx5u"><div style="display: flex;"><div class="css-1k6ejn"><button class="css-1r1ksye"><svg viewBox="0 0 100 100" height="18" width="18" style="display: flex;"><circle cy="50" cx="50" r="49" fill="#343C47" stroke="#343C47" stroke-width="1"></circle><path d="M 75 50 L 35 30 L 35 30 L 35 70 Z" fill="white" stroke="#343C47" stroke-width="1"></path></svg></button></div><h1 size="6" class="css-126oefj">20250818_1502-Fadista-KeysRockTribe-Youssef-Learning-1sleeve (08 15 - 11 06).mp3</h1></div><div class="css-8iijpq"></div><div style="display: flex;"><div class="css-19dlab4"><span class="css-539ve0">Duration: </span>02:52</div><div class="css-19dlab4"><span class="css-539ve0">BPM: </span>95</div><div class="css-19dlab4"><span class="css-539ve0">Key: </span>D major</div></div></div></div></div><div class="css-1iycq74"></div><div class="css-1xj5gmv"><div class="css-1nph6s4"><div class="css-1d1fx5u"><h1 size="6" class="css-126oefj">Genre</h1></div></div><div class="css-14973vb"><div class="css-67d2bd"><div class="css-jqf1m" style="margin-right: 0.75rem;">Main genre(s)</div><div class="css-ke6rf7">SubGenre</div></div><div class="css-lrqkzw"><div class="css-1mfu1mb"><div class="css-1nio6mf">Main Information</div><div class="css-baj5wp"></div><div class="css-n7mmgz"><div><div class="css-an0v9w"><span class="css-539ve0">Pop:</span> 0.28</div><div class="css-1h5wp7u"><div class="css-15finfe"><div class="css-1fyajx3"></div></div><div class="css-15finfe"><div class="css-142snjf"></div></div><div class="css-15finfe"><div class="css-10w2l6p"></div></div><div class="css-15finfe"><div class="css-10w2l6p"></div></div><div class="css-15finfe"><div class="css-10w2l6p"></div></div></div></div></div> <div class="css-1xilvsz"></div><div class="css-1nio6mf">Free Genre(s)</div><div class="css-1n4qdr3"></div><div class="css-184gh"><div class="css-fgghh5"><span class="css-539ve0"><div color="rgb(16, 42, 66)" class="css-1bv9q01">Mpb</div><div color="rgb(16, 42, 66)" class="css-1bv9q01">Indie</div><div color="rgb(16, 42, 66)" class="css-1bv9q01">Bossa Nova</div></span></div></div></div><div class="css-1fpdyai"><div class="css-1nio6mf">Segments</div><div height="500" class="css-r5qc7a"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="649.625" height="400"><rect width="649.625" height="400" fill="transparent"></rect><g transform="translate(60,50)"><g transform="translate(0,300)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:00</text></g><g transform="translate(37.46875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:15</text></g><g transform="translate(74.9375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:30</text></g><g transform="translate(112.40625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:45</text></g><g transform="translate(149.875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:00</text></g><g transform="translate(187.34375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:15</text></g><g transform="translate(224.8125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:30</text></g><g transform="translate(262.28125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:45</text></g><g transform="translate(299.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:00</text></g><g transform="translate(337.21875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:15</text></g><g transform="translate(374.6875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:30</text></g><g transform="translate(412.15625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:45</text></g><g transform="translate(449.625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">03:00</text></g><line x1="0" x2="449.625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,300)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,270)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.1</text></g><g transform="translate(0,240)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,210)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.3</text></g><g transform="translate(0,180)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,150)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.5</text></g><g transform="translate(0,120)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,90)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.7</text></g><g transform="translate(0,60)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,30)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.9</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="300" style="stroke: transparent; stroke-width: 1;"></line></g><path d="M0,231C0,231,24.989127136030344,230.50119689073708,37.46875,231C49.96832567838337,231.49960061139714,63.21576766832419,237.8985910775781,74.9375,234C88.44701996544313,229.50679946364977,98.89673003455688,206.7273825825588,112.40625,201C124.1279823316758,196.0305528423227,137.59972996059275,196.13913866713645,149.875,198C162.59469596706307,199.9282337834444,174.70629073652998,212.081796298418,187.34375,213C199.6921449469618,213.89720106807167,212.46410505303822,203.1027989319284,224.8125,204C237.44995926347008,204.91820370158203,249.5508354243508,216.54644782684431,262.28125,219C274.5472528679891,221.36404539803874,287.40917560591083,220.92794749527607,299.75,219C312.3957852404442,217.0244099420302,325.0904009898316,205.41593416166234,337.21875,207C350.11687745419175,208.68460546951454,361.61338028751805,227.1717896435286,374.6875,231C386.68486438358275,234.51292749291136,399.66666666666663,230.99999999999997,412.15625,231C424.64583333333326,230.99999999999997,449.625,231,449.625,231" fill="none" stroke-width="2" stroke="#51b201"></path><path d="M0,258C0,258,25.286882999522636,260.77432104601866,37.46875,258C50.299716068687594,255.0778519250197,62.27139609225861,245.0427836695631,74.9375,240C87.26000982766755,235.0940121935196,101.78539246172868,238.1829376722748,112.40625,228C130.05713903267505,211.07689353403893,134.09134997586276,129.640306902649,149.875,126C160.78943904749005,123.48271738524613,175.83004336268988,147.19112945357952,187.34375,162C201.25870548901202,179.89734452919183,212.61861102223614,228.3233535163874,224.8125,228C237.6287307259259,227.66014343089245,248.45437868786422,174.15866543834017,262.28125,153C273.8368074690922,135.3170282761336,287.8864656292789,124.7791144429988,299.75,108C313.0232567293084,89.22705369809336,325.1212077087014,44.55684933921114,337.21875,45C350.15673866681414,45.47393744026019,358.48628000140087,109.98336278594734,374.6875,120C385.5182958279715,126.69629525169381,399.66666666666663,119.99999999999999,412.15625,120C424.64583333333326,119.99999999999999,449.625,120,449.625,120" fill="none" stroke-width="2" stroke="#22a52d"></path><g><rect width="449.625" height="300" fill="red" opacity="0" style="cursor: auto;"></rect></g><g transform="translate(469.625,0)"><g transform="translate(0,0)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#22a52d" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">African</text></g><g transform="translate(0,20)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Arab / Middle Eastern</text></g><g transform="translate(0,40)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Asian</text></g><g transform="translate(0,60)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Blues</text></g><g transform="translate(0,80)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Children / Jingle</text></g><g transform="translate(0,100)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Electronic Dance</text></g><g transform="translate(0,120)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Folk / Country</text></g><g transform="translate(0,140)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Funk / Soul</text></g><g transform="translate(0,160)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Jazz</text></g><g transform="translate(0,180)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Latin</text></g><g transform="translate(0,200)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#51b201" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Pop</text></g><g transform="translate(0,220)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Rap Hip-Hop</text></g><g transform="translate(0,240)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Reggae</text></g><g transform="translate(0,260)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">R&amp;B</text></g><g transform="translate(0,280)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Rock</text></g></g></g></svg></div></div></div><div class="css-1brckf0"><div width="60" class="css-1u92k0j"><svg width="30" height="30" viewBox="0 0 40 40"><g transform="translate(-9609.865 -9397.5)"><circle cx="20" cy="20" r="20" transform="translate(9609.865 9397.5)" fill="#343c47"></circle><path d="M0,2.174,14.2,0,11.579,13.753Z" transform="translate(9627.476 9407.618) rotate(45)" fill="#fff"></path></g></svg></div><div width="449.625" class="css-1cmg6z6"><div width="429.22568707483" class="css-xrlanb"><svg height="50" width="100%" overflow="visible"><defs><linearGradient id="waveform18" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(209, 209, 209); stop-opacity: 1;"></stop><stop style="stop-color: rgb(209, 209, 209); stop-opacity: 1;" offset="0%"></stop><stop style="stop-color: rgb(147, 151, 156); stop-opacity: 1;" offset="0%"></stop><stop offset="100%" style="stop-color: rgb(147, 151, 156); stop-opacity: 1;"></stop></linearGradient></defs><path pointer-events="none" fill="url(#waveform18)" opacity="1"></path><rect x="112.40443330870895" y="1" width="74.93628887247263" height="48" stroke="#5F656D" stroke-width="1" fill="transparent"></rect><text x="77.40443330870895" y="61" text-anchor="center" width="74.93628887247263" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="200" font-style="italic">Most Representative Segment</text><line x1="112.40443330870895" x2="112.40443330870895" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><line x1="187.34072218118158" x2="187.34072218118158" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><rect fill="transparent" cursor="pointer" x="0" y="0" width="429.21875" height="80" style="cursor: pointer;"></rect><line fill="#93979C" y1="0" y2="80" stroke="rgba(0, 0, 0, 0.5)" pointer-events="none" opacity="0"></line></svg></div></div><div class="css-k4cc6o"><div class="css-1yltisf"><span class="css-mjvep5">00:00</span> - <span class="css-8xv5qp">02:52</span></div></div></div></div></div></div></div><div class="css-1l8a0gz"></div><div class="css-1xj5gmv"><div class="css-1nph6s4"><div class="css-1d1fx5u"><h1 size="6" class="css-126oefj">Mood</h1></div></div><div class="css-14973vb"><div class="css-lrqkzw"><div class="css-1mfu1mb"><div class="css-g7sirx"></div><div class="css-1nio6mf">Main Information</div><div class="css-baj5wp"></div><div style="display: flex;"><div class="css-n7mmgz"><div style="margin-bottom: 12px;"><div class="css-an0v9w"><span class="css-539ve0">Chill:</span> 0.5</div><div class="css-1h5wp7u"><div class="css-15finfe"><div class="css-n61jb2"></div></div><div class="css-15finfe"><div class="css-n61jb2"></div></div><div class="css-15finfe"><div class="css-gz7stf"></div></div><div class="css-15finfe"><div class="css-1svaw7b"></div></div><div class="css-15finfe"><div class="css-1svaw7b"></div></div></div></div><div style="margin-bottom: 12px;"><div class="css-an0v9w"><span class="css-539ve0">Happy:</span> 0.45</div><div class="css-1h5wp7u"><div class="css-15finfe"><div class="css-fstqdm"></div></div><div class="css-15finfe"><div class="css-fstqdm"></div></div><div class="css-15finfe"><div class="css-9l1wfi"></div></div><div class="css-15finfe"><div class="css-t51yud"></div></div><div class="css-15finfe"><div class="css-t51yud"></div></div></div></div><div style="margin-bottom: 12px;"><div class="css-an0v9w"><span class="css-539ve0">Romantic:</span> 0.44</div><div class="css-1h5wp7u"><div class="css-15finfe"><div class="css-1gut5f5"></div></div><div class="css-15finfe"><div class="css-1gut5f5"></div></div><div class="css-15finfe"><div class="css-1wj3suw"></div></div><div class="css-15finfe"><div class="css-1ec5s6a"></div></div><div class="css-15finfe"><div class="css-1ec5s6a"></div></div></div></div></div><div class="css-wv5td5"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="323.8125" height="320"><rect width="323.8125" height="320" fill="transparent"></rect><g transform="translate(80,70)"><g transform="translate(81.90625, 105)"><g><line x1="0" y1="0" x2="5.0153113446331446e-15" y2="-81.90625" line="[object Object]"></line><line x1="0" y1="0" x2="57.91646479656066" y2="-57.91646479656065" line="[object Object]"></line><line x1="0" y1="0" x2="81.90625" y2="0" line="[object Object]"></line><line x1="0" y1="0" x2="57.91646479656066" y2="57.91646479656065" line="[object Object]"></line><line x1="0" y1="0" x2="5.0153113446331446e-15" y2="81.90625" line="[object Object]"></line><line x1="0" y1="0" x2="-57.91646479656065" y2="57.91646479656066" line="[object Object]"></line><line x1="0" y1="0" x2="-81.90625" y2="1.0030622689266289e-14" line="[object Object]"></line><line x1="0" y1="0" x2="-57.916464796560675" y2="-57.91646479656065" line="[object Object]"></line><circle fill="none" r="81.90625" stroke="#dddddd" stroke-width="1"></circle><circle fill="none" r="40.953125" stroke="#dddddd" stroke-width="1"></circle><g transform="translate(7.21967558309838e-15, -117.90625)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Chill: 0.5</text></g></g><g transform="translate(83.37230891927638, -83.37230891927636)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Happy: 0.45</text></g></g><g transform="translate(117.90625, 0)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Romantic: 0.44</text></g></g><g transform="translate(83.37230891927638, 83.37230891927636)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Calm: 0.41</text></g></g><g transform="translate(7.21967558309838e-15, 117.90625)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Sad: 0.38</text></g></g><g transform="translate(-83.37230891927636, 83.37230891927638)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Sexy: 0.33</text></g></g><g transform="translate(-117.90625, 1.443935116619676e-14)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Energetic: 0.32</text></g></g><g transform="translate(-83.37230891927639, -83.37230891927636)"><g transform="translate(-30, 0)"><text style="font-size: 12px;">Uplifting: 0.28</text></g></g></g><path d="M0,-40.953125L26.062409158452294,-26.062409158452297L36.03875,-2.2067369916385838e-15L23.74575056658987,23.745750566589866L3.81163662192119e-15,31.124375L-19.112433382865017,19.112433382865024L-26.21,4.814698890847819e-15L-16.21661014303699,-16.216610143036984Z" fill="rgba(232, 193, 160, 1)" fill-opacity="0.25" stroke="rgba(232, 193, 160, 1)" stroke-width="2" style="mix-blend-mode: multiply;"></path><g transform="translate(2.5076556723165723e-15, -40.953125)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(26.062409158452297, -26.062409158452294)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(36.03875, 0)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(23.74575056658987, 23.745750566589866)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(1.905818310960595e-15, 31.124375)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(-19.112433382865017, 19.11243338286502)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(-26.21, 3.209799260565213e-15)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g><g transform="translate(-16.21661014303699, -16.216610143036984)" style="pointer-events: none;"><circle r="3" fill="#e8c1a0" stroke="#e8c1a0" stroke-width="0" style="pointer-events: none;"></circle></g></g></g></svg></div></div></div></div></div><div class="css-1fpdyai"><div class="css-1nio6mf">Segments</div><div height="500" class="css-r5qc7a"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="649.625" height="400"><rect width="649.625" height="400" fill="transparent"></rect><g transform="translate(60,50)"><g transform="translate(0,300)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:00</text></g><g transform="translate(37.46875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:15</text></g><g transform="translate(74.9375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:30</text></g><g transform="translate(112.40625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:45</text></g><g transform="translate(149.875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:00</text></g><g transform="translate(187.34375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:15</text></g><g transform="translate(224.8125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:30</text></g><g transform="translate(262.28125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:45</text></g><g transform="translate(299.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:00</text></g><g transform="translate(337.21875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:15</text></g><g transform="translate(374.6875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:30</text></g><g transform="translate(412.15625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:45</text></g><g transform="translate(449.625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">03:00</text></g><line x1="0" x2="449.625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,300)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,270)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.1</text></g><g transform="translate(0,240)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,210)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.3</text></g><g transform="translate(0,180)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,150)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.5</text></g><g transform="translate(0,120)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,90)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.7</text></g><g transform="translate(0,60)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,30)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.9</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="300" style="stroke: transparent; stroke-width: 1;"></line></g><path d="M0,240C0,240,26.012235029081907,245.13235912636705,37.46875,240C51.51017026777154,233.70963930642188,63.1696005484696,214.05576491782128,74.9375,198C88.36694827342379,179.67726828885407,100.02337700581072,134.8748837260341,112.40625,135C125.0063199242416,135.12731082692773,134.44350388452852,189.38785897225745,149.875,201C160.87085468852598,209.27433804268088,175.17508593466758,211.68449567595704,187.34375,210C200.19104524194964,208.2215621068494,211.96520475805036,194.03166660142546,224.8125,189C236.98116406533242,184.23412053600413,250.50126243632945,186.11634782696404,262.28125,180C275.6902543261041,173.03784201566992,286.5221866872157,155.13611102881572,299.75,147C311.64284107349425,139.6849984094882,326.4727638320433,127.48509807939952,337.21875,132C353.91995230561974,139.01697258747888,357.4715957581417,210.51905107704962,374.6875,222C385.3605585946777,229.11765347063317,399.66666666666663,221.99999999999997,412.15625,222C424.64583333333326,221.99999999999997,449.625,222,449.625,222" fill="none" stroke-width="2" stroke="#d6bb01"></path><path d="M0,162C0,162,25.065518156884618,160.53125892083887,37.46875,162C50.04714096583422,163.4894827215154,63.716936798650096,175.27775804617454,74.9375,171C89.59157571473118,165.41324030059383,99.39366201637722,117.79373139658479,112.40625,117C124.44796065730138,116.26548939924028,135.8481402379694,152.03072699197804,149.875,159C161.3379329727468,164.6953809131235,175.88081702725322,156.30461908687653,187.34375,162C201.37060976203065,168.96927300802196,211.64168566477994,202.55908616748204,224.8125,204C236.74310604900813,205.30523252767816,249.06742629048895,181.26496155368278,262.28125,177C274.18325475395073,173.15844786465456,287.8479952460492,180.8415521353454,299.75,177C312.963823709511,172.7350384463172,326.1008491714292,147.26120640267047,337.21875,150C352.1984031393321,153.69010110279007,358.48628000140087,214.98336278594732,374.6875,225C385.5182958279715,231.69629525169378,399.66666666666663,224.99999999999997,412.15625,225C424.64583333333326,224.99999999999997,449.625,225,449.625,225" fill="none" stroke-width="2" stroke="#7191a4"></path><path d="M0,114C0,114,26.089742027084352,108.66751321608773,37.46875,114C51.69396152814073,120.66628871802527,61.762810353086245,146.07561658347478,74.9375,159C86.86550208770079,170.70138170280708,100.26757223412446,189.79178716056165,112.40625,189C125.29121252850459,188.15953383958606,136.85220729735795,161.30532770776347,149.875,150C161.909251821671,139.55284295248458,175.3094981783291,121.90790749012817,187.34375,123C200.3665427026421,124.18180129341806,212.44504803227704,148.64188907500116,224.8125,162C237.42918679909812,175.62730999143324,248.23982973222843,197.70963930642188,262.28125,204C273.73776497091814,209.13235912636705,287.29969580275593,204.99054517470196,299.75,204C312.279362893615,203.0031649219376,326.19508053544195,205.48549221313039,337.21875,198C352.54002438778895,187.5962700538367,359.29445584319166,143.75482257518155,374.6875,135C385.692924079169,128.74064452773368,399.66666666666663,134.99999999999997,412.15625,135C424.64583333333326,134.99999999999997,449.625,135,449.625,135" fill="none" stroke-width="2" stroke="#e056e7"></path><path d="M0,123C0,123,25.84421324503153,118.32051641050343,37.46875,123C51.15795612551199,128.51062091916822,61.45141198259568,155.87456603410746,74.9375,159C86.67255181183924,161.71962703171582,100.08374017233243,151.90598780648034,112.40625,147C125.07235390774139,141.95721633043692,137.38541666666666,135,149.875,129C162.36458333333337,123,175.75343377398661,108.47732306276671,187.34375,111C201.1001284057458,113.99412870773456,210.92722663775206,145.90512826115676,224.8125,156C236.3401183059116,164.38080930901307,249.5508354243508,168.54644782684431,262.28125,171C274.5472528679891,173.36404539803874,287.29969580275593,170.00945482529806,299.75,171C312.279362893615,171.99683507806236,324.84005424787813,177.93736518446445,337.21875,177C349.8233042829671,176.04553188905052,362.04171475955576,166.97559005796978,374.6875,165C387.02832439408917,163.07205250472393,399.66666666666663,164.99999999999997,412.15625,165C424.64583333333326,164.99999999999997,449.625,165,449.625,165" fill="none" stroke-width="2" stroke="#c3487b"></path><g><rect width="449.625" height="300" fill="red" opacity="0" style="cursor: auto;"></rect></g><g transform="translate(469.625,40)"><g transform="translate(0,0)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Aggressive</text></g><g transform="translate(0,20)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Calm</text></g><g transform="translate(0,40)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#c3487b" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Chill</text></g><g transform="translate(0,60)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Dark</text></g><g transform="translate(0,80)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Energetic</text></g><g transform="translate(0,100)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Epic</text></g><g transform="translate(0,120)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Ethereal</text></g><g transform="translate(0,140)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#e056e7" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Happy</text></g><g transform="translate(0,160)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#7191a4" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Romantic</text></g><g transform="translate(0,180)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#d6bb01" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Sad</text></g><g transform="translate(0,200)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Scary</text></g><g transform="translate(0,220)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Sexy</text></g><g transform="translate(0,240)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Uplifting</text></g></g></g></svg></div></div></div><div class="css-1brckf0"><div width="60" class="css-1u92k0j"><svg width="30" height="30" viewBox="0 0 40 40"><g transform="translate(-9609.865 -9397.5)"><circle cx="20" cy="20" r="20" transform="translate(9609.865 9397.5)" fill="#343c47"></circle><path d="M0,2.174,14.2,0,11.579,13.753Z" transform="translate(9627.476 9407.618) rotate(45)" fill="#fff"></path></g></svg></div><div width="449.625" class="css-1cmg6z6"><div width="429.22568707483" class="css-xrlanb"><svg height="50" width="100%" overflow="visible"><defs><linearGradient id="waveform20" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(209, 209, 209); stop-opacity: 1;"></stop><stop style="stop-color: rgb(209, 209, 209); stop-opacity: 1;" offset="0%"></stop><stop style="stop-color: rgb(147, 151, 156); stop-opacity: 1;" offset="0%"></stop><stop offset="100%" style="stop-color: rgb(147, 151, 156); stop-opacity: 1;"></stop></linearGradient></defs><path pointer-events="none" fill="url(#waveform20)" opacity="1"></path><rect x="112.40443330870895" y="1" width="74.93628887247263" height="48" stroke="#5F656D" stroke-width="1" fill="transparent"></rect><text x="77.40443330870895" y="61" text-anchor="center" width="74.93628887247263" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="200" font-style="italic">Most Representative Segment</text><line x1="112.40443330870895" x2="112.40443330870895" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><line x1="187.34072218118158" x2="187.34072218118158" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><rect fill="transparent" cursor="pointer" x="0" y="0" width="429.21875" height="80" style="cursor: pointer;"></rect><line fill="#93979C" y1="0" y2="80" stroke="rgba(0, 0, 0, 0.5)" pointer-events="none" opacity="0"></line></svg></div></div><div class="css-k4cc6o"><div class="css-1yltisf"><span class="css-mjvep5">00:00</span> - <span class="css-8xv5qp">02:52</span></div></div></div></div></div><div class="css-1xilvsz"></div><div class="css-lrqkzw"><div class="css-1mfu1mb"><div class="css-1nio6mf">Emotional Profile / Energy Level</div><div class="css-1n4qdr3"></div><div class="css-184gh"><div class="css-fgghh5"><span class="css-539ve0">Emotional Profile</span>: <div color="black" class="css-17txxtu">Balanced</div></div><div class="css-fgghh5"><span class="css-539ve0">Emotional Dynamics</span>: <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"></path></svg><span>&nbsp;&nbsp;Low</span></div><div class="css-fgghh5"><span class="css-539ve0">Energy Level</span>: <div color="white" class="css-3sin5p">Medium</div></div><div class="css-fgghh5"><span class="css-539ve0">Energy Dynamic</span>: <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="svg-inline--fa fa-arrow-down " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"></path></svg><span>&nbsp;&nbsp;Low</span></div></div><div class="css-1xtyoez"></div><div class="css-1goqfx4"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="624.03125" height="240"><rect width="624.03125" height="240" fill="transparent"></rect><g transform="translate(80,30)"><g transform="translate(0,180)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(46,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.8</text></g><g transform="translate(93,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.6</text></g><g transform="translate(139,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.4</text></g><g transform="translate(186,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.2</text></g><g transform="translate(232,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(278,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(325,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(371,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(418,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(464,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="text-before-edge" text-anchor="middle" transform="translate(0,10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="464.03125" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,180)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(0,162)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.8</text></g><g transform="translate(0,144)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.6</text></g><g transform="translate(0,126)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.4</text></g><g transform="translate(0,108)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.2</text></g><g transform="translate(0,90)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,72)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,54)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,36)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,18)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="180" style="stroke: transparent; stroke-width: 1;"></line></g><circle cx="287" cy="98" r="4.5" fill="#597d13" style="mix-blend-mode: multiply;"></circle><g transform="translate(0, 90)"><line x1="0" x2="464.03125" y1="0" y2="0" stroke="#000000" stroke-width="1" style="stroke: rgb(17, 42, 67); stroke-width: 1;"></line><text transform="translate(450.03125, -14) rotate(-90)" text-anchor="start" dominant-baseline="central">Emotional Profile</text></g><g transform="translate(232, 0)"><line x1="0" x2="0" y1="0" y2="180" stroke="#000000" stroke-width="1" style="stroke: rgb(17, 42, 67); stroke-width: 1;"></line><text transform="translate(14, 14) rotate(0)" text-anchor="start" dominant-baseline="central">Energy Level</text></g><g><rect width="464.03125" height="180" fill="red" opacity="0" style="cursor: auto;"></rect></g></g></svg></div></div></div></div><div class="css-1fpdyai"><div class="css-1nio6mf">Segments</div><div height="450" class="css-nzhuk7"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="649.625" height="360"><rect width="649.625" height="360" fill="transparent"></rect><g transform="translate(60,50)"><g transform="translate(0, 130)"><line x1="0" x2="449.625" y1="0" y2="0" stroke="#000000" stroke-width="1" style="stroke: black; stroke-width: 2;"></line></g><g transform="translate(0,260)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:00</text></g><g transform="translate(37.46875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:15</text></g><g transform="translate(74.9375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:30</text></g><g transform="translate(112.40625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:45</text></g><g transform="translate(149.875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:00</text></g><g transform="translate(187.34375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:15</text></g><g transform="translate(224.8125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:30</text></g><g transform="translate(262.28125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:45</text></g><g transform="translate(299.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:00</text></g><g transform="translate(337.21875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:15</text></g><g transform="translate(374.6875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:30</text></g><g transform="translate(412.15625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:45</text></g><g transform="translate(449.625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">03:00</text></g><line x1="0" x2="449.625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,260)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-1</text></g><g transform="translate(0,234)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.8</text></g><g transform="translate(0,208)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.6</text></g><g transform="translate(0,182)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.4</text></g><g transform="translate(0,156)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">-0.2</text></g><g transform="translate(0,130)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,104)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,78)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,52)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,26)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="260" style="stroke: transparent; stroke-width: 1;"></line></g><g><path d="M0,63C0,63,25.566745246049223,59.15844786465458,37.46875,63C50.68257370951104,67.2649615536828,62.329528040345565,81.42882019888474,74.9375,90C87.31301990547091,98.41315372381104,100.10669687632662,114.54756644842327,112.40625,114C125.09818157090811,113.43496517117057,136.62883305883202,90.94212336032503,149.875,85C161.75592065800654,79.67031508075767,175.36586681372083,75.43488806328868,187.34375,78C200.4455689370125,80.80580730545606,211.79949996133527,97.77661785819511,224.8125,104C236.8539086618781,109.75872492168197,249.68849053389414,112.32769281285404,262.28125,115C274.67095769897514,117.62921760871586,287.2723661068433,118.16873993643776,299.75,120C312.25157867986366,121.83477428204327,325.4125329875132,129.2193122197973,337.21875,126C350.58410999912405,122.35554159967906,361.27172754222954,99.83035398361666,374.6875,95C386.4634718538691,90.76005684843379,399.66666666666663,94.99999999999999,412.15625,95C424.64583333333326,94.99999999999999,449.625,95,449.625,95L449.625,130C449.625,130,424.64583333333326,129.99999999999997,412.15625,130C399.66666666666663,129.99999999999997,387.17708333333326,129.99999999999997,374.6875,130C362.19791666666663,129.99999999999997,349.7083333333333,129.99999999999997,337.21875,130C324.72916666666663,129.99999999999997,312.2395833333333,129.99999999999997,299.75,130C287.26041666666663,129.99999999999997,274.7708333333333,129.99999999999997,262.28125,130C249.79166666666663,129.99999999999997,237.30208333333331,129.99999999999997,224.8125,130C212.32291666666663,129.99999999999997,199.83333333333331,129.99999999999997,187.34375,130C174.85416666666666,129.99999999999997,162.36458333333331,129.99999999999997,149.875,130C137.38541666666666,129.99999999999997,124.89583333333331,129.99999999999997,112.40625,130C99.91666666666666,129.99999999999997,87.42708333333333,129.99999999999997,74.9375,130C62.44791666666666,129.99999999999997,49.95833333333333,129.99999999999997,37.46875,130C24.979166666666664,129.99999999999997,0,130,0,130Z" fill="rgba(108, 225, 198, 1)" fill-opacity="0.2" stroke-width="0" style="mix-blend-mode: normal;"></path><path d="M0,125C0,125,24.989127136030344,124.5011968907371,37.46875,125C49.96832567838337,125.49960061139713,62.66222996059276,125.12135804972971,74.9375,128C87.65719596706307,130.9828631295218,99.68061182682045,140.89756698280172,112.40625,143C124.67637516341395,145.02717662703049,137.3986387306992,140.66913909238187,149.875,141C162.37786162554346,141.3315636711667,174.83642450501574,144.33427769191826,187.34375,145C199.81569141725402,145.66383893422176,212.42850384833235,143.37584790204954,224.8125,145C237.41136631007174,146.65233216311557,249.68697675506297,153.00540532779186,262.28125,155C274.669539891303,156.96197244052146,287.4537077914042,158.8851676623092,299.75,157C312.4456331792786,155.05360862314376,324.57503775966245,146.51474011781565,337.21875,143C349.561455708617,139.56893465369546,362.1438951460732,137.16166354832646,374.6875,136C387.1239805765922,134.8482572335835,399.66666666666663,135.99999999999997,412.15625,136C424.64583333333326,135.99999999999997,449.625,136,449.625,136L449.625,130C449.625,130,424.64583333333326,129.99999999999997,412.15625,130C399.66666666666663,129.99999999999997,387.17708333333326,129.99999999999997,374.6875,130C362.19791666666663,129.99999999999997,349.7083333333333,129.99999999999997,337.21875,130C324.72916666666663,129.99999999999997,312.2395833333333,129.99999999999997,299.75,130C287.26041666666663,129.99999999999997,274.7708333333333,129.99999999999997,262.28125,130C249.79166666666663,129.99999999999997,237.30208333333331,129.99999999999997,224.8125,130C212.32291666666663,129.99999999999997,199.83333333333331,129.99999999999997,187.34375,130C174.85416666666666,129.99999999999997,162.36458333333331,129.99999999999997,149.875,130C137.38541666666666,129.99999999999997,124.89583333333331,129.99999999999997,112.40625,130C99.91666666666666,129.99999999999997,87.42708333333333,129.99999999999997,74.9375,130C62.44791666666666,129.99999999999997,49.95833333333333,129.99999999999997,37.46875,130C24.979166666666664,129.99999999999997,0,130,0,130Z" fill="rgba(167, 6, 24, 1)" fill-opacity="0.2" stroke-width="0" style="mix-blend-mode: normal;"></path></g><path d="M0,63C0,63,25.566745246049223,59.15844786465458,37.46875,63C50.68257370951104,67.2649615536828,62.329528040345565,81.42882019888474,74.9375,90C87.31301990547091,98.41315372381104,100.10669687632662,114.54756644842327,112.40625,114C125.09818157090811,113.43496517117057,136.62883305883202,90.94212336032503,149.875,85C161.75592065800654,79.67031508075767,175.36586681372083,75.43488806328868,187.34375,78C200.4455689370125,80.80580730545606,211.79949996133527,97.77661785819511,224.8125,104C236.8539086618781,109.75872492168197,249.68849053389414,112.32769281285404,262.28125,115C274.67095769897514,117.62921760871586,287.2723661068433,118.16873993643776,299.75,120C312.25157867986366,121.83477428204327,325.4125329875132,129.2193122197973,337.21875,126C350.58410999912405,122.35554159967906,361.27172754222954,99.83035398361666,374.6875,95C386.4634718538691,90.76005684843379,399.66666666666663,94.99999999999999,412.15625,95C424.64583333333326,94.99999999999999,449.625,95,449.625,95" fill="none" stroke-width="2" stroke="#6ce1c6"></path><path d="M0,125C0,125,24.989127136030344,124.5011968907371,37.46875,125C49.96832567838337,125.49960061139713,62.66222996059276,125.12135804972971,74.9375,128C87.65719596706307,130.9828631295218,99.68061182682045,140.89756698280172,112.40625,143C124.67637516341395,145.02717662703049,137.3986387306992,140.66913909238187,149.875,141C162.37786162554346,141.3315636711667,174.83642450501574,144.33427769191826,187.34375,145C199.81569141725402,145.66383893422176,212.42850384833235,143.37584790204954,224.8125,145C237.41136631007174,146.65233216311557,249.68697675506297,153.00540532779186,262.28125,155C274.669539891303,156.96197244052146,287.4537077914042,158.8851676623092,299.75,157C312.4456331792786,155.05360862314376,324.57503775966245,146.51474011781565,337.21875,143C349.561455708617,139.56893465369546,362.1438951460732,137.16166354832646,374.6875,136C387.1239805765922,134.8482572335835,399.66666666666663,135.99999999999997,412.15625,136C424.64583333333326,135.99999999999997,449.625,136,449.625,136" fill="none" stroke-width="2" stroke="#a70618"></path><g><rect width="449.625" height="260" fill="red" opacity="0" style="cursor: auto;"></rect></g><g transform="translate(469.625,220)"><g transform="translate(0,0)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#a70618" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">arousal</text></g><g transform="translate(0,20)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#6ce1c6" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">valence</text></g></g></g></svg></div></div></div><div class="css-1brckf0"><div width="60" class="css-1u92k0j"><svg width="30" height="30" viewBox="0 0 40 40"><g transform="translate(-9609.865 -9397.5)"><circle cx="20" cy="20" r="20" transform="translate(9609.865 9397.5)" fill="#343c47"></circle><path d="M0,2.174,14.2,0,11.579,13.753Z" transform="translate(9627.476 9407.618) rotate(45)" fill="#fff"></path></g></svg></div><div width="449.625" class="css-1cmg6z6"><div width="429.22568707483" class="css-xrlanb"><svg height="50" width="100%" overflow="visible"><defs><linearGradient id="waveform22" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(209, 209, 209); stop-opacity: 1;"></stop><stop style="stop-color: rgb(209, 209, 209); stop-opacity: 1;" offset="0%"></stop><stop style="stop-color: rgb(147, 151, 156); stop-opacity: 1;" offset="0%"></stop><stop offset="100%" style="stop-color: rgb(147, 151, 156); stop-opacity: 1;"></stop></linearGradient></defs><path pointer-events="none" fill="url(#waveform22)" opacity="1"></path><rect x="112.40443330870895" y="1" width="74.93628887247263" height="48" stroke="#5F656D" stroke-width="1" fill="transparent"></rect><text x="77.40443330870895" y="61" text-anchor="center" width="74.93628887247263" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="200" font-style="italic">Most Representative Segment</text><line x1="112.40443330870895" x2="112.40443330870895" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><line x1="187.34072218118158" x2="187.34072218118158" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><rect fill="transparent" cursor="pointer" x="0" y="0" width="429.21875" height="80" style="cursor: pointer;"></rect><line fill="#93979C" y1="0" y2="80" stroke="rgba(0, 0, 0, 0.5)" pointer-events="none" opacity="0" x1="null" x2="null"></line></svg></div></div><div class="css-k4cc6o"><div class="css-1yltisf"><span class="css-mjvep5">00:00</span> - <span class="css-8xv5qp">02:52</span></div></div></div></div></div></div></div><div class="css-1l8a0gz"></div><div class="css-1xj5gmv"><div class="css-1nph6s4"><div class="css-1d1fx5u"><h1 size="6" class="css-126oefj">Instruments</h1></div></div><div class="css-14973vb"><div class="css-lrqkzw"><div class="css-1mfu1mb"><div class="css-g7sirx"></div><div class="css-1nio6mf">Main Information</div><div class="css-1n4qdr3"></div><div class="css-184gh"><div class="css-fgghh5"><span class="css-539ve0">Acoustic Guitar</span>: <div color="white" class="css-3sin5p">Frequently</div></div><div class="css-fgghh5"><span class="css-539ve0">Bass Guitar</span>: <div color="white" class="css-12ly5i">Throughout</div></div><div class="css-fgghh5"><span class="css-539ve0">Electric Guitar</span>: <div color="white" class="css-3sin5p">Frequently</div></div><div class="css-fgghh5"><span class="css-539ve0">Percussion</span>: <div color="white" class="css-12ly5i">Throughout</div></div><div class="css-fgghh5"><span class="css-539ve0">Drum Kit</span>: <div color="white" class="css-3sin5p">Frequently</div></div><div class="css-fgghh5"><span class="css-539ve0">Banjo</span>: <div color="white" class="css-3sin5p">Frequently</div></div><div class="css-fgghh5"><span class="css-539ve0">Tabla</span>: <div color="white" class="css-3sin5p">Frequently</div></div><div class="css-fgghh5"><span class="css-539ve0">Lute Oud</span>: <div color="white" class="css-3sin5p">Frequently</div></div></div></div><div class="css-1fpdyai"><div class="css-1nio6mf">Segments</div><div height="500" class="css-r5qc7a"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="649.625" height="400"><rect width="649.625" height="400" fill="transparent"></rect><g transform="translate(60,50)"><g transform="translate(0,300)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:00</text></g><g transform="translate(37.46875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:15</text></g><g transform="translate(74.9375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:30</text></g><g transform="translate(112.40625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:45</text></g><g transform="translate(149.875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:00</text></g><g transform="translate(187.34375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:15</text></g><g transform="translate(224.8125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:30</text></g><g transform="translate(262.28125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:45</text></g><g transform="translate(299.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:00</text></g><g transform="translate(337.21875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:15</text></g><g transform="translate(374.6875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:30</text></g><g transform="translate(412.15625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:45</text></g><g transform="translate(449.625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">03:00</text></g><line x1="0" x2="449.625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,300)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,270)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.1</text></g><g transform="translate(0,240)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,210)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.3</text></g><g transform="translate(0,180)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,150)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.5</text></g><g transform="translate(0,120)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,90)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.7</text></g><g transform="translate(0,60)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,30)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.9</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="300" style="stroke: transparent; stroke-width: 1;"></line></g><path d="M0,222C0,222,25.20274713201093,219.63595460196126,37.46875,222C50.199164575649185,224.45355217315569,63.489729786698064,228.39815734095328,74.9375,237C88.99891515598955,247.56573275683084,101.47491173917533,286.99002299992935,112.40625,285C128.1128519070496,282.14065210498717,131.7827826002184,187.31365100649566,149.875,165C160.45033936269408,151.95713042795617,176.4595623383976,155.9258957942817,187.34375,144C203.27110970261342,126.54825826262487,208.19104624631183,68.18847345168417,224.8125,60C235.57101762483245,54.69987178883984,250.76755884098344,72.60341166289096,262.28125,69C276.19623874172925,64.64506012638026,285.92667603953896,35.98074024950384,299.75,27C311.30727918417296,19.491464235307383,326.08555224244793,10.919488133407631,337.21875,15C352.14707233276283,20.471491457684188,359.4942692987424,66.57546727539149,374.6875,75C385.74501208051703,81.13130769924786,399.66666666666663,74.99999999999999,412.15625,75C424.64583333333326,74.99999999999999,449.625,75,449.625,75" fill="none" stroke-width="2" stroke="#d8abc9"></path><path d="M0,51C0,51,26.355336446090444,45.005878629393486,37.46875,51C52.46366373446179,59.08764403755311,61.47583948329513,106.48688085275276,74.9375,108C86.68660394621205,109.3206241623721,100.56835566341914,70.81948319434855,112.40625,72C125.72016726664128,73.32771104686705,135.4518579295983,121.66919233481913,149.875,126C161.17726182684828,129.3937072736768,176.91200958063814,105.69822812640426,187.34375,111C207.5681457907701,121.27873858564936,208.87616921585192,255.52091760076456,224.8125,258C235.69485217086273,259.692876992482,248.99242796759904,199.13372286132497,262.28125,198C274.1349050997982,196.98871700259548,288.60188246159305,241.94491295282194,299.75,240C314.629260387206,237.40414772666423,320.74458088915156,152.79933844877755,337.21875,147C348.00136836164165,143.20423629122604,361.7414796256612,164.61946534591243,374.6875,168C386.7789185730223,171.1573764231209,399.66666666666663,167.99999999999997,412.15625,168C424.64583333333326,167.99999999999997,449.625,168,449.625,168" fill="none" stroke-width="2" stroke="#ed882e"></path><path d="M0,66C0,66,25.754390434083486,61.57684529788253,37.46875,66C50.991358573044934,71.10592058901669,61.94147179509231,97.62233410582945,74.9375,99C86.99140457586644,100.27779448951077,100.02498773687543,77.63558876820933,112.40625,78C125.00804760540777,78.37090213344727,137.38541666666663,93.99999999999997,149.875,102C162.3645833333333,109.99999999999999,174.7419523945922,118.44152129489305,187.34375,126C199.72501226312457,133.42620299805571,213.0591372755545,148.96623061206824,224.8125,147C238.2668158830574,144.74921540550423,249.2535619156332,106.09171226678613,262.28125,105C274.3119385795723,103.99183567988831,288.32619274863265,137.07349953374649,299.75,135C313.86714760254273,132.4376406807635,324.83587700581074,71.87488372603411,337.21875,72C349.81881992424167,72.1273108269277,359.0934795010501,128.9211370137628,374.6875,138C385.644428586373,144.37914086315104,399.66666666666663,137.99999999999997,412.15625,138C424.64583333333326,137.99999999999997,449.625,138,449.625,138" fill="none" stroke-width="2" stroke="#eb1872"></path><path d="M0,24C0,24,26.768555686014434,16.957958510792814,37.46875,24C54.48212037179252,35.196886384840354,60.91230653317016,86.51280310911476,74.9375,111C86.40117014998262,131.01492162790387,101.10388397173328,163.48631467966675,112.40625,162C126.82911151507942,160.10332537992042,136.67171843238847,66.6024755883216,149.875,66C161.7839550777236,65.45658549505245,173.3406402346637,139.1327527790572,187.34375,141C198.81724297227092,142.52993500915153,213.2721275566474,97.55805691772598,224.8125,99C238.6709155624412,100.73157725624799,250.45246322333438,144.93151422486594,262.28125,171C275.6098187179802,200.37373126997113,286.0021727985528,265.86717984576404,299.75,267C311.34461198495677,267.9553953468167,325.92602217909047,228.81632655293123,337.21875,204C351.66770534695155,172.24770773499498,355.8713597377045,103.62203774139594,374.6875,90C385.2016754705082,82.38821070196205,399.66666666666663,89.99999999999999,412.15625,90C424.64583333333326,89.99999999999999,449.625,90,449.625,90" fill="none" stroke-width="2" stroke="#94c192"></path><path d="M0,63C0,63,25.93031101436723,58.084725159254326,37.46875,63C51.33121553372353,68.90528997496611,62.686411652945864,88.30630241876288,74.9375,102C87.68530999055704,116.24890996527148,101.19230319692356,148.75987522138234,112.40625,147C127.08004598065817,144.69714888045527,133.4008308891516,72.72748222282628,149.875,54C160.65761836164165,41.74255063642691,176.2876222493078,29.69999388016944,187.34375,33C202.5420944812033,37.53636489467335,211.2887062214761,83.96199714459918,224.8125,105C236.5261943024903,123.22216001063438,251.04723298123955,133.2631665377242,262.28125,153C276.89571909922734,178.6758862185571,288.2909767524982,249.73054562134223,299.75,249C313.7857183063286,248.10518267311167,318.6789300977458,129.46057683506805,337.21875,99C347.7544844671074,81.68998561252586,361.1648914269551,71.10592058901669,374.6875,66C386.40185956591654,61.57684529788253,399.66666666666663,65.99999999999999,412.15625,66C424.64583333333326,65.99999999999999,449.625,66,449.625,66" fill="none" stroke-width="2" stroke="#87da3e"></path><g><rect width="449.625" height="300" fill="red" opacity="0" style="cursor: auto;"></rect></g><g transform="translate(469.625,160)"><g transform="translate(0,0)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#87da3e" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Acoustic Guitar</text></g><g transform="translate(0,20)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#94c192" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Banjo</text></g><g transform="translate(0,40)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#eb1872" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Bass Guitar</text></g><g transform="translate(0,60)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#ed882e" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Electric Guitar</text></g><g transform="translate(0,80)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#d8abc9" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Lute Oud</text></g><g transform="translate(0,100)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Percussion</text></g><g transform="translate(0,120)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="rgba(1, 1, 1, .1)" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">Tabla</text></g></g></g></svg></div></div></div><div class="css-1brckf0"><div width="60" class="css-1u92k0j"><svg width="30" height="30" viewBox="0 0 40 40"><g transform="translate(-9609.865 -9397.5)"><circle cx="20" cy="20" r="20" transform="translate(9609.865 9397.5)" fill="#343c47"></circle><path d="M0,2.174,14.2,0,11.579,13.753Z" transform="translate(9627.476 9407.618) rotate(45)" fill="#fff"></path></g></svg></div><div width="449.625" class="css-1cmg6z6"><div width="429.22568707483" class="css-xrlanb"><svg height="50" width="100%" overflow="visible"><defs><linearGradient id="waveform24" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(209, 209, 209); stop-opacity: 1;"></stop><stop style="stop-color: rgb(209, 209, 209); stop-opacity: 1;" offset="0%"></stop><stop style="stop-color: rgb(147, 151, 156); stop-opacity: 1;" offset="0%"></stop><stop offset="100%" style="stop-color: rgb(147, 151, 156); stop-opacity: 1;"></stop></linearGradient></defs><path pointer-events="none" fill="url(#waveform24)" opacity="1"></path><rect x="112.40443330870895" y="1" width="74.93628887247263" height="48" stroke="#5F656D" stroke-width="1" fill="transparent"></rect><text x="77.40443330870895" y="61" text-anchor="center" width="74.93628887247263" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="200" font-style="italic">Most Representative Segment</text><line x1="112.40443330870895" x2="112.40443330870895" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><line x1="187.34072218118158" x2="187.34072218118158" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><rect fill="transparent" cursor="pointer" x="0" y="0" width="429.21875" height="80" style="cursor: pointer;"></rect><line fill="#93979C" y1="0" y2="80" stroke="rgba(0, 0, 0, 0.5)" pointer-events="none" opacity="0"></line></svg></div></div><div class="css-k4cc6o"><div class="css-1yltisf"><span class="css-mjvep5">00:00</span> - <span class="css-8xv5qp">02:52</span></div></div></div></div></div></div></div><div class="css-1l8a0gz"></div><div class="css-1xj5gmv"><div class="css-1nph6s4"><div class="css-1d1fx5u"><h1 size="6" class="css-126oefj">Voices</h1></div></div><div class="css-14973vb"><div class="css-lrqkzw"><div class="css-1mfu1mb"><div class="css-g7sirx"></div><div class="css-1nio6mf">Main Information</div><div class="css-1n4qdr3"></div><div class="css-184gh"><div class="css-fgghh5"><span class="css-539ve0">Predominant Voice Gender</span> : <div color="white" class="css-jqsnqv">Female</div></div><div class="css-fgghh5"><span class="css-539ve0">Voice Presence Profile</span> : <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"></path></svg><span>&nbsp;&nbsp;High</span></div></div><div class="css-rxwk1t"></div></div><div class="css-1fpdyai"><div class="css-1nio6mf">Segments</div><div height="450" class="css-nzhuk7"><div style="width: 100%; height: 100%;"><div style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" role="img" width="649.625" height="360"><rect width="649.625" height="360" fill="transparent"></rect><g transform="translate(60,50)"><g transform="translate(0,260)"><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:00</text></g><g transform="translate(37.46875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:15</text></g><g transform="translate(74.9375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:30</text></g><g transform="translate(112.40625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">00:45</text></g><g transform="translate(149.875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:00</text></g><g transform="translate(187.34375,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:15</text></g><g transform="translate(224.8125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:30</text></g><g transform="translate(262.28125,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">01:45</text></g><g transform="translate(299.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:00</text></g><g transform="translate(337.21875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:15</text></g><g transform="translate(374.6875,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:30</text></g><g transform="translate(412.15625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">02:45</text></g><g transform="translate(449.625,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="3" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="start" transform="translate(0,8) rotate(25)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">03:00</text></g><line x1="0" x2="449.625" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,260)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0</text></g><g transform="translate(0,234)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.1</text></g><g transform="translate(0,208)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.2</text></g><g transform="translate(0,182)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.3</text></g><g transform="translate(0,156)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.4</text></g><g transform="translate(0,130)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.5</text></g><g transform="translate(0,104)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.6</text></g><g transform="translate(0,78)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.7</text></g><g transform="translate(0,52)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.8</text></g><g transform="translate(0,26)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">0.9</text></g><g transform="translate(0,0)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">1</text></g><line x1="0" x2="0" y1="0" y2="260" style="stroke: transparent; stroke-width: 1;"></line></g><path d="M0,70C0,70,26.138910775587007,75.4572976528468,37.46875,70C51.81879778056845,63.08794409876604,62.447916666666664,23.000000000000004,74.9375,23C87.42708333333334,22.999999999999996,100.38513594771759,53.00500607307774,112.40625,70C125.44715789121514,88.4367396772742,137.56382314858934,130.2173589201861,149.875,130C162.55380377423035,129.77615047441202,176.18044717318048,63.67642917602549,187.34375,65C202.17405787425682,66.75834724878801,209.7960145860066,190.06190273519317,224.8125,192C235.9196171395374,193.43353606083934,247.00458802888093,140.00721985745537,262.28125,130C273.3165194018413,122.77117165390901,288.62260576272917,119.9195322223374,299.75,125C314.69767220065256,131.82470355117965,323.02770913754944,168.24199417798002,337.21875,182C348.611692478788,193.04529050915832,361.65743972536984,201.31980631858886,374.6875,205C386.7164653707579,208.3974457077201,399.66666666666663,204.99999999999997,412.15625,205C424.64583333333326,204.99999999999997,449.625,205,449.625,205" fill="none" stroke-width="2" stroke="#0d0633"></path><path d="M0,260C0,260,24.989127136030344,260.4988031092629,37.46875,260C49.96832567838337,259.5003993886029,62.43792432161665,257.49960061139717,74.9375,257C87.41712286396965,256.50119689073705,99.91666666666666,256.99999999999994,112.40625,257C124.89583333333331,256.99999999999994,137.38541666666666,256.99999999999994,149.875,257C162.36458333333331,256.99999999999994,174.85860533463008,257.3329778594472,187.34375,257C199.83777832010568,256.6667852141561,212.3229166666667,255.00000000000003,224.8125,255C237.30208333333337,255.00000000000003,249.7916666666667,257.00000000000006,262.28125,257C274.77083333333337,257.00000000000006,287.26041666666674,255.00000000000003,299.75,255C312.23958333333337,255.00000000000003,324.7247216798943,256.6667852141561,337.21875,257C349.70389466537,257.3329778594472,362.19791666666663,256.99999999999994,374.6875,257C387.17708333333326,256.99999999999994,399.66666666666663,256.99999999999994,412.15625,257C424.64583333333326,256.99999999999994,449.625,257,449.625,257" fill="none" stroke-width="2" stroke="#521264"></path><path d="M0,143C0,143,26.186078041781972,137.4242462667963,37.46875,143C51.94524340747835,150.15409988514762,61.04778852523273,188.98378164492635,74.9375,192C86.4630260326441,194.5028239956383,101.42846377438444,183.33780916892937,112.40625,172C127.91193396274373,155.9857980297426,137.2834402625727,96.10179059277664,149.875,96C162.26583231278005,95.89983209448117,175.7993314000645,169.8754072326152,187.34375,169C201.19371483699,167.9497644004494,208.33857478146442,61.30363585255679,224.8125,57C235.59515933208445,54.183146173611846,248.71715986541645,85.13042920566467,262.28125,91C273.972555851276,96.0591633269472,288.4845195668478,99.08363735592783,299.75,94C314.27433235290556,87.44577987975951,323.6861985467202,57.51447163465754,337.21875,44C348.9275406394507,32.30685259026682,361.4247705110105,20.408114722143566,374.6875,16C386.5577615521261,12.054697884997042,399.66666666666663,15.999999999999998,412.15625,16C424.64583333333326,15.999999999999998,449.625,16,449.625,16" fill="none" stroke-width="2" stroke="#4c9bd0"></path><g><rect width="449.625" height="260" fill="red" opacity="0" style="cursor: auto;"></rect></g><g transform="translate(469.625,200)"><g transform="translate(0,0)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#4c9bd0" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">female</text></g><g transform="translate(0,20)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#521264" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">instrumental</text></g><g transform="translate(0,40)" style="opacity: 0.75;"><rect width="80" height="20" fill="transparent" style="cursor: pointer;"></rect><circle r="5" cx="5" cy="10" fill="#0d0633" stroke-width="0" stroke="rgba(0, 0, 0, .5)" style="pointer-events: none;"></circle><text text-anchor="start" x="18" y="10" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51); dominant-baseline: central; pointer-events: none; user-select: none;">male</text></g></g></g></svg></div></div></div><div class="css-1brckf0"><div width="60" class="css-1u92k0j"><svg width="30" height="30" viewBox="0 0 40 40"><g transform="translate(-9609.865 -9397.5)"><circle cx="20" cy="20" r="20" transform="translate(9609.865 9397.5)" fill="#343c47"></circle><path d="M0,2.174,14.2,0,11.579,13.753Z" transform="translate(9627.476 9407.618) rotate(45)" fill="#fff"></path></g></svg></div><div width="449.625" class="css-1cmg6z6"><div width="429.22568707483" class="css-xrlanb"><svg height="50" width="100%" overflow="visible"><defs><linearGradient id="waveform26" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(209, 209, 209); stop-opacity: 1;"></stop><stop style="stop-color: rgb(209, 209, 209); stop-opacity: 1;" offset="0%"></stop><stop style="stop-color: rgb(147, 151, 156); stop-opacity: 1;" offset="0%"></stop><stop offset="100%" style="stop-color: rgb(147, 151, 156); stop-opacity: 1;"></stop></linearGradient></defs><path pointer-events="none" fill="url(#waveform26)" opacity="1"></path><rect x="112.40443330870895" y="1" width="74.93628887247263" height="48" stroke="#5F656D" stroke-width="1" fill="transparent"></rect><text x="77.40443330870895" y="61" text-anchor="center" width="74.93628887247263" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="200" font-style="italic">Most Representative Segment</text><line x1="112.40443330870895" x2="112.40443330870895" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><line x1="187.34072218118158" x2="187.34072218118158" y1="0" y2="50" stroke="transparent" stroke-width="1"></line><rect fill="transparent" cursor="pointer" x="0" y="0" width="429.21875" height="80" style="cursor: pointer;"></rect><line fill="#93979C" y1="0" y2="80" stroke="rgba(0, 0, 0, 0.5)" pointer-events="none" opacity="0"></line></svg></div></div><div class="css-k4cc6o"><div class="css-1yltisf"><span class="css-mjvep5">00:00</span> - <span class="css-8xv5qp">02:52</span></div></div></div></div></div></div></div><div class="css-1l8a0gz"></div><div class="css-1xj5gmv"><div class="css-1nph6s4"><div class="css-1d1fx5u"><h1 size="6" class="css-126oefj">Augmented keywords</h1></div></div><div class="css-14973vb"><div class="css-lrqkzw"><div class="css-159pagi"><div class="css-1xtyoez"></div><div class="css-1v7ohaw"><div class="css-1nio6mf">You do not have access to <i>Augmented Keywords</i></div></div><p class="css-1sgbmxk">For more subscriptions, contact us at <a href="mailto:sales@cyanite.ai">sales@cyanite.ai</a>.</p></div></div></div></div></div>
+
+  
